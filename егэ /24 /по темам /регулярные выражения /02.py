@@ -8,7 +8,7 @@ from re import *
 
 s = open("24.txt").readline()
 
-reg = r"(ZX|ZY)"
+reg = r"(AB|AC)"
 
 print(max(len(x.group()) // 2 for x in finditer(reg, s)))
 
