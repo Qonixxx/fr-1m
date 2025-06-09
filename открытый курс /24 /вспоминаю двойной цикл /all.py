@@ -53,6 +53,11 @@ for l in range(len(s)):
                 break
 print(m // 2)
 
+# * (регулярка)
+from re import *
+reg = r"(ZX|ZY)+" # пара повторяется н-ое кол-во раз
+print(max([len(x.group()) // 2 for x in finditer(reg, s)])) # тк пары
+
 # 5
 
 s = open("24.txt").readline()
