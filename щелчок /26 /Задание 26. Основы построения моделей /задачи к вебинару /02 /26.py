@@ -50,5 +50,5 @@ for i in range(len(xs)):
 ans1 = 1
 for i in range(len(t) - 1):
     if t[i + 1] - t[i] > 1:
-        ans2 += 1
+        ans1 += 1
 print(ans1, ans2)
