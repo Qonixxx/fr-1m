@@ -12,7 +12,7 @@ print(max([len(x.group()) for x in finditer(reg, s)]))
 reg = r"(ZX|ZY)+" # пара повторяется н-ое кол-во раз
 print(max([len(x.group()) // 2 for x in finditer(reg, s)])) # тк пары
 
-# 3 (согл или гл)
+# 3 (согл и гл)
 
 reg = r"([BCD][AO])+"
 print(max([len(x.group()) // 2 for x in finditer(reg, s)]))
