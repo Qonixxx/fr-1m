@@ -7,7 +7,7 @@ with open("26.txt") as f:
 
 max_zep = [0] * N
 
-for i in range(i):
+for i in range(n):
     box = xs[i]
     for j in range(i):
         prev_box = xs[j]
