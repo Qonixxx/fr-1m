@@ -13,7 +13,7 @@ for i in range(n):
         prev_box = xs[j]
         if prev_box - box == 9:
             max_zep[i] = max(max_zep[i], max_zep[j] + 1)
-    if mxzep[i] == 0: mxzep[i] == 1
+    if max_zep[i] == 0: max_zep[i] == 1
 print(max(max_zep), max(a[i] for i in range(n) if max_zep[i] == 1040))
 
 # ---------------------------------------------------------------------------------
